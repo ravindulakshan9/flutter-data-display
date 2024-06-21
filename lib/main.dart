@@ -1,8 +1,8 @@
 import 'package:data_display_app/firebase_options.dart';
-import 'package:data_display_app/screen/auth/loginpage.dart';
+import 'package:data_display_app/view/auth/loginpage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'screen/homescreen/homepage.dart';
+import 'view/homescreen/homepage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SignInScreen(),
+      home: const SignInScreen(),
       routes: {
         '/home': (context) => const HomeScreen(),
-        '/login': (context) => SignInScreen(),
+        '/login': (context) => const SignInScreen(),
       },
     );
   }
